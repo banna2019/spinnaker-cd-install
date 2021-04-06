@@ -4,7 +4,7 @@ name: Spinnaker Pre Install
 env:
   SPINNAKER_VERSION: 1.23.6
   REGISTRY_URL: "gcr.io/spinnaker-marketplace/"
-  NEW_REGISTRY_URL: "registry.cn-beijing.aliyuncs.com/spinnaker-cd/"
+  NEW_REGISTRY_URL: "registry.cn-hongkong.aliyuncs.com/spinnaker-cd/"
   NEW_REGISTRY_URL2: "docker.io/spinnakercd/"
   TAG_FILE: "tagfile.txt"
   BOM_DIR: ".boms"
@@ -43,6 +43,7 @@ jobs:
         docker cp halyard:/opt/${SPINNAKER_VERSION}.yml ./${SPINNAKER_VERSION}.yml
         mkdir -p .boms
         
+
     ## 解析版本文件生成镜像标签
     ## 上传到阿里云镜像仓库
     ## docker https://github.com/Azure/docker-login
