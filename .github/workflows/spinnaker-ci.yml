@@ -2,7 +2,7 @@
 
 name: Spinnaker Pre Install
 env:
-  SPINNAKER_VERSION: 1.24.4
+  SPINNAKER_VERSION: 1.25.4
   REGISTRY_URL: "gcr.io/spinnaker-marketplace/"
   NEW_REGISTRY_URL: "registry.cn-hongkong.aliyuncs.com/spiannaker-cd/"
   NEW_REGISTRY_URL2: "banna1990/"
