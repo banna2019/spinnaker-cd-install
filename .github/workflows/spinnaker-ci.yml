@@ -32,8 +32,8 @@ jobs:
 #     ## 
     - name: 01-使用Halyard获取bom版本文件
       run: |
-        docker pull registry.cn-hongkong.aliyuncs.com/spiannaker-cd/halyard:1.40.0
-        docker run -itd -p 8084:8084 -p 9000:9000 --name halyard registry.cn-hongkong.aliyuncs.com/spiannaker-cd/halyard:1.40.0
+        docker pull registry.cn-hongkong.aliyuncs.com/dev-cicd/halyard:1.40.0
+        docker run -itd -p 8084:8084 -p 9000:9000 --name halyard registry.cn-hongkong.aliyuncs.com/dev-cicd/halyard:1.40.0
         sleep 5
         docker ps | grep halyard 
         chmod +x getbom.sh
